@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Чайник</title>
+  </head>
+  <body>
+    <h1>Чайник</h1>
+    {% for post in posts %}
+    <p><b>{{post.body}}</b></p>
+    {% endfor %}
+    <form method="post" action="/">
+    <input type="submit" value="START" name="action1"/>
+    <input type="submit" value="STOP" name="action2" />
+    </form>
+  </body>
+</html>
